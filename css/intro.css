@@ -1,0 +1,40 @@
+#root__ {
+    position: relative;
+    width:100vw;
+    height:100vh;
+    box-sizing:border-box;
+    overflow:hidden;
+    background:url(../images/banner/banner_intro.png)no-repeat center / 100% 100%;
+}
+.intro-ui-text {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:30%;
+    height:auto;
+}
+.intro-ui-btnstart {
+    position:absolute;
+    left:50%;
+    bottom:27px;
+    transform:translateX(-50%);
+    width:100%;
+    max-width:172px;
+    height:59px;
+    justify-content:center;
+    gap:3px;
+    grid-gap:3px;
+    background:url(../images/banner/banner_btn_box.png)no-repeat center / 100% 100%;
+    cursor: pointer;
+}
+.intro-ui-btnstart span {
+    font-size:21px;
+    letter-spacing:-0.58px;
+    color:#1694ca;
+    font-weight:var(--bold);
+}
+.intro-ui-btnstart img {
+    width:20px;
+    height:14px;
+}

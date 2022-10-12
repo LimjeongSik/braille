@@ -30,3 +30,14 @@ body {font-size:1rem;}
 .m-nav ul li.on::after {width:100%;left:0;}
 .m-nav ul li.on a {color:#222;font-weight:bold;}
 .m-nav ul li a {padding:0 0.3rem;margin:0 0.3rem;font-size:0.7rem;color:#979797;position:relative;letter-spacing:-0.9px;display:inline-block;transition:color .35s ease-in-out;}
+@media( orientation: portrait ){
+  html {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+  }
+}

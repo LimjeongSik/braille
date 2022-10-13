@@ -72,10 +72,15 @@
     btnClose.addEventListener('click',()=>{
         braillePopup.classList.remove('active');
     });
-    // 점역 익히기 선택 시
+    // 점형 익히기 선택 시
     const select1 = document.querySelector('.select_1');
     select1.addEventListener('click',()=>{
         location.href = 'braille1.html';
+    })
+    // 언어별 점자 선택 시
+    const select2 = document.querySelector('.select_2');
+    select2.addEventListener('click',()=>{
+        location.href = 'braille2.html';
     })
   </script>
 </body>

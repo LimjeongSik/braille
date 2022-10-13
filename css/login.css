@@ -1,0 +1,33 @@
+#root__ {
+    position: relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+    overflow:hidden;
+    background:url(../images/banner/banner_step.png)no-repeat center / 100% 100%;
+}
+.login-ui-move-sign {
+    cursor: pointer;
+    justify-content:center;
+    width:100%;
+    max-width:13.9rem;
+    height:2.5rem;
+    border-radius:1.25rem;
+    border:1px solid rgba(255,255,255,0.6);
+    box-sizing:border-box;
+    margin-top:1.05rem;
+}
+.login-ui-move-sign a {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    font-size:0.7rem;
+    letter-spacing:-0.78px;
+    color:var(--main-white);
+    gap:0.4rem;
+    grid-gap:0.4rem;
+    -webkit-tap-highlight-color: transparent;
+}
+.login-ui-move-sign a span {text-decoration:underline;}

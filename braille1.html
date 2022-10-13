@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortuct icon" href="#">
+  <link rel="stylesheet" href="css/slide.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/braille1.css">
+  <title>Braille UP</title>
+</head>
+<body>
+  <div id="root__">
+    <div class="common-ui-btnprev flex"><img src="images/btns/btn_prev.png" alt="뒤로가기"></div>
+    <div class="common-ui-btnsetting flex"><img src="images/btns/btn_setting.png" alt="설정"></div>
+    <div class="ui-swiper-slide">
+        <div class="swiper step">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item level1 level">
+                        <div class="level_info">
+                            <span>Level.1</span>
+                            <h6>점자학습의 기초</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item level2 level lock">
+                        <div class="level_info">
+                            <span>Level.2</span>
+                            <h6>점의 번호와 위치</h6>
+                        </div>
+                        <img src="images/icons/ic_lock.png" alt="이전 레벨을 통과해주세요." class="lock">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item level3 level lock">
+                        <div class="level_info">
+                            <span>Level.3</span>
+                            <h6>점형 구별</h6>
+                        </div>
+                        <img src="images/icons/ic_lock.png" alt="이전 레벨을 통과해주세요." class="lock">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item level4 level lock">
+                        <div class="level_info">
+                            <span>Level.4</span>
+                            <h6>빠진점 찾으며 점 읽기</h6>
+                        </div>
+                        <img src="images/icons/ic_lock.png" alt="이전 레벨을 통과해주세요." class="lock">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item level5 level lock">
+                        <div class="level_info">
+                            <span>Level.5</span>
+                            <h6>숫자 점자</h6>
+                        </div>
+                        <img src="images/icons/ic_lock.png" alt="이전 레벨을 통과해주세요." class="lock">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // 레벨별 스와이프
+    var swiper = new Swiper(".step", {
+      slidesPerView: 3.3,
+      spaceBetween: 0,
+    });
+  </script>
+  <script>
+    let level1 = document.querySelector('.level1');
+    level1.addEventListener('click',()=>{
+        location.href = 'level1.html';
+    })
+  </script>
+</body>
+</html>

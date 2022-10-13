@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortuct icon" href="#">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Braille UP</title>
+</head>
+<body>
+  <div id="root__">
+    <div class="common-ui-btnprev flex"><img src="images/btns/btn_prev.png" alt="뒤로가기"></div>
+    <div class="common-ui-btnsetting flex"><img src="images/btns/btn_setting.png" alt="설정"></div>
+    <div class="main-ui-activity-title"><h2>학습 모드 선택</h2></div>
+    <div class="main-ui-select flex">
+        <div class="select-ui-braille select">
+            <div class="select-ui-info">
+                <span>도티와 함께 배우는</span>
+                <h6 style="--c:#4b400d;">점자 학습</h6>
+            </div>
+        </div>
+        <div class="select-ui-game select">
+            <div class="select-ui-info">
+                <span>쉽고 재밌게 배우는</span>
+                <h6 style="--c:var(--main-white);">게임</h6>
+            </div>
+        </div>
+        <div class="select-ui-activity select">
+            <div class="select-ui-info">
+                <span>한눈에 봐요!</span>
+                <h6 style="--c:var(--main-white);">전체 활동</h6>
+            </div>
+        </div>
+    </div>
+    <div class="main-ui-notice flex">
+        <img src="images/icons/ic_icon.png" alt="">
+        <span>도티와 함께 점자를 배워볼까요?!</span>
+    </div>
+  </div>
+  <div class="popup_braille">
+    <div class="braille-ui-select">
+        <div class="flex top">
+            <div class="main-ui-notice flex">
+                <img src="images/icons/ic_icon.png" alt="">
+                <span>도리&도티와 함께 배우는 점자 학습</span>
+            </div>
+            <div class="common-ui-btnclose flex"><img src="images/btns/btn_close.png" alt="닫기"></div>
+        </div>
+        <div class="flex braille-ui-selectbox">
+            <div class="select_1 selectbox">
+                <h6 style="--c:var(--main-white)">점형 익히기</h6>
+            </div>
+            <div class="select_2 selectbox">
+                <h6 style="--c:#4b400d;">언어별 점자</h6>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <script src="js/common.js"></script>
+  <script>
+    // 메인 선택 팝업
+    const braille = document.querySelector('.select-ui-braille');
+    const braillePopup = document.querySelector('.popup_braille');
+    const btnClose = document.querySelector('.common-ui-btnclose');
+    braille.addEventListener('click',()=>{
+        braillePopup.classList.add('active');
+    });
+    btnClose.addEventListener('click',()=>{
+        braillePopup.classList.remove('active');
+    });
+    // 점역 익히기 선택 시
+    const select1 = document.querySelector('.select_1');
+    select1.addEventListener('click',()=>{
+        location.href = 'braille1.html';
+    })
+  </script>
+</body>
+</html>

@@ -13,8 +13,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  src : url("../fonts/PretendardVariable.ttf") format('woff2-variations');
+  font-family: "Pretendard";
+}
 body {
-  font-family:"Infinity-B";
+  font-family: "Infinity-B";
 }
 /* Reset */
 html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,nav,section,article,header,footer,main,aside,dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}

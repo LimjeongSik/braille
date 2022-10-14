@@ -56,12 +56,12 @@
     font-weight:var(--bold);
     padding-top:0.25rem;
 }
-.level.level1 {
+.level.level2_1 {
     background-image: url(../images/banner/banner_level_2_1.png);
 }
-.level.level2 {
+.level.level2_2 {
     background-image: url(../images/banner/banner_level_2_2.png);
 }
-.level.level3 {
+.level.level2_3 {
     background-image: url(../images/banner/banner_level_2_3.png);
 }

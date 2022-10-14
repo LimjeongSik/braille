@@ -53,18 +53,18 @@
     font-weight:var(--bold);
     padding-top:0.25rem;
 }
-.level.level1 {
+.level.level1_1 {
     background-image: url(../images/banner/banner_level_1.png);
 }
-.level.level2 {
+.level.level1_2 {
     background-image: url(../images/banner/banner_level_2.png);
 }
-.level.level3 {
+.level.level1_3 {
     background-image: url(../images/banner/banner_level_3.png);
 }
-.level.level4 {
+.level.level1_4 {
     background-image: url(../images/banner/banner_level_4.png);
 }
-.level.level5 {
+.level.level1_5 {
     background-image: url(../images/banner/banner_level_5.png);
 }

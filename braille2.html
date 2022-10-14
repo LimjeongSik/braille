@@ -19,7 +19,7 @@
         <div class="swiper step">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="item level1 level">
+                    <div class="item level2_1 level">
                         <div class="level_info">
                             <span>Level.1</span>
                             <h6>Grade</h6>
@@ -27,21 +27,21 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="item level2 level lock">
+                    <div class="item level2_2 level lock">
+                        <img src="images/icons/ic_lock.png" alt="이전 레벨을 통과해주세요." class="lock">
                         <div class="level_info">
                             <span>Level.2</span>
                             <h6>대문자표</h6>
                         </div>
-                        <img src="images/icons/ic_lock.png" alt="이전 레벨을 통과해주세요." class="lock">
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="item level3 level lock">
+                    <div class="item level2_3 level lock">
+                        <img src="images/icons/ic_lock.png" alt="이전 레벨을 통과해주세요." class="lock">
                         <div class="level_info">
                             <span>Level.3</span>
                             <h6>Grade2</h6>
                         </div>
-                        <img src="images/icons/ic_lock.png" alt="이전 레벨을 통과해주세요." class="lock">
                     </div>
                 </div>
             </div>
@@ -57,6 +57,13 @@
       slidesPerView: 3,
       spaceBetween: 0,
     });
+  </script>
+  <script>
+    // 레벨 1 페이지 전환
+    let level2_1 = document.querySelector('.level2_1');
+    level2_1.addEventListener('click',()=>{
+        location.href = 'level2_1.html';
+    })
   </script>
 </body>
 </html>

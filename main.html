@@ -40,7 +40,7 @@
         <span>도티와 함께 점자를 배워볼까요?!</span>
     </div>
   </div>
-  <div class="popup_braille">
+  <div class="popup braille">
     <div class="braille-ui-select">
         <div class="flex top">
             <div class="main-ui-notice flex">
@@ -59,28 +59,68 @@
         </div>
     </div>
   </div>
+  <div class="popup game">
+    <div class="game-ui-select">
+        <div class="flex top">
+            <div class="main-ui-notice flex">
+                <img src="images/icons/ic_icon.png" alt="">
+                <span>도리&도티와 함께 배우는 점자 학습</span>
+            </div>
+            <div class="common-ui-btnclose flex"><img src="images/btns/btn_close.png" alt="닫기"></div>
+        </div>
+        <div class="flex game-ui-selectbox">
+            <div class="select_1 selectbox">
+                <h6 style="--c:var(--main-white)">
+                    도티와 함께하는<br>
+                    <span>비어 있는 점자 맞추기</span>
+                </h6>
+            </div>
+            <div class="select_2 selectbox">
+                <h6 style="--c:#4b400d;">
+                    도리와 함께하는<br>
+                    받아쓰기
+                </h6>
+            </div>
+        </div>
+    </div>
+  </div>
   
   <script src="js/common.js"></script>
   <script>
-    // 메인 선택 팝업
+    
     const braille = document.querySelector('.select-ui-braille');
-    const braillePopup = document.querySelector('.popup_braille');
-    const btnClose = document.querySelector('.common-ui-btnclose');
+    const game = document.querySelector('.select-ui-game');
+    const braillePopup = document.querySelector('.popup.braille');
+    const gamePopup = document.querySelector('.popup.game');
+    const btnClose = document.querySelectorAll('.common-ui-btnclose');
+
+    // 메인 선택 팝업
     braille.addEventListener('click',()=>{
         braillePopup.classList.add('active');
     });
-    btnClose.addEventListener('click',()=>{
-        braillePopup.classList.remove('active');
+    game.addEventListener('click',()=>{
+        gamePopup.classList.add('active');
     });
+
     // 점형 익히기 선택 시
-    const select1 = document.querySelector('.select_1');
-    select1.addEventListener('click',()=>{
-        location.href = 'braille1.html';
-    })
+    const select1 = document.querySelector('.braille-ui-selectbox .select_1');
+    select1.addEventListener('click',()=>{location.href = 'braille1.html';})
     // 언어별 점자 선택 시 
-    const select2 = document.querySelector('.select_2');
-    select2.addEventListener('click',()=>{
-        location.href = 'braille2.html';
+    const select2 = document.querySelector('.braille-ui-selectbox .select_2');
+    select2.addEventListener('click',()=>{location.href = 'braille2.html';})
+    // 게임 점차 맞추기 선택 시
+    const gameSelect1 = document.querySelector('.game-ui-selectbox .select_1');
+    gameSelect1.addEventListener('click',()=>{location.href='game1_1.html';})
+    const gameSelect2 = document.querySelector('.game-ui-selectbox .select_2');
+    gameSelect2.addEventListener('click',()=>{location.href='game2_1.html';})
+
+    // 게임 받아쓰기 선택 시
+
+    // 팝업닫기
+    btnClose.forEach((item, i)=>{
+        item.addEventListener('click',()=>{
+            document.querySelectorAll('.popup')[i].classList.remove('active')
+        })
     })
   </script>
 </body>

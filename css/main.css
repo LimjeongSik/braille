@@ -89,7 +89,7 @@
 }
 
 /* 선택 팝업 */
-.popup_braille {
+.popup {
     opacity: 0;
     visibility:hidden;
     position:fixed;
@@ -100,9 +100,8 @@
     background:rgba(0,0,0,0.7);
     z-index:-1;
     transition:opacity .4s , visibility .4s;
-    transition-duration: .6s;
 }
-.popup_braille.active {
+.popup.active {
     opacity: 1;
     visibility:visible;
     z-index:9999;
@@ -113,7 +112,7 @@
     top:50%;
     transform:translate(-50%,-50%);
     width:100%;
-    padding: 0 10%;
+    padding: 0 8%;
     box-sizing:border-box;
 }
 .braille-ui-select .top {justify-content:space-between;margin-bottom:0.75rem;}
@@ -121,7 +120,7 @@
     width:1.3rem;
     height:1.3rem;
 }
-.popup_braille .main-ui-notice {
+.popup.braille .main-ui-notice {
     position: relative;
     left:0;
     transform:none;
@@ -149,4 +148,51 @@
     font-size:1.25rem;
     letter-spacing:-0.94px;
     color:var(--c);
+}
+
+.game-ui-select {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    padding: 0 8%;
+    box-sizing:border-box;
+}
+.game-ui-select .top {justify-content:space-between;margin-bottom:0.75rem;}
+.common-ui-btnclose img {
+    width:1.3rem;
+    height:1.3rem;
+}
+.popup.game .main-ui-notice {
+    position: relative;
+    left:0;
+    transform:none;
+    margin-bottom:0;
+}
+.game-ui-selectbox {gap:0.8rem;grid-gap:0.8rem;}
+.game-ui-selectbox .selectbox {
+    flex:1;
+    height:10.75rem;
+    padding:1.3rem;
+    border-radius:0.7rem;
+    overflow:hidden;
+    box-sizing:border-box;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+.game-ui-selectbox .select_1 {
+    background-image: url(../images/main/game_select_1.png);
+}
+.game-ui-selectbox .select_2 {
+    background-image: url(../images/main/game_select_2.png);
+}
+.game-ui-selectbox .selectbox h6 {
+    font-size:1.25rem;
+    letter-spacing:-0.94px;
+    color:var(--c);
+}
+.game-ui-selectbox .selectbox h6 span {
+    color:#ffff64;
 }

@@ -14,7 +14,7 @@
   font-style: normal;
 }
 @font-face {
-  src : url("../fonts/PretendardVariable.ttf") format('woff2-variations');
+  src : url("../fonts/PretendardVariable.ttf");
   font-family: "Pretendard";
 }
 body {

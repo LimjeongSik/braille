@@ -90,6 +90,7 @@
     
     const braille = document.querySelector('.select-ui-braille');
     const game = document.querySelector('.select-ui-game');
+    const activity = document.querySelector('.select-ui-activity');
     const braillePopup = document.querySelector('.popup.braille');
     const gamePopup = document.querySelector('.popup.game');
     const btnClose = document.querySelectorAll('.common-ui-btnclose');
@@ -101,7 +102,7 @@
     game.addEventListener('click',()=>{
         gamePopup.classList.add('active');
     });
-
+    activity.addEventListener('click',()=>{location.href='activities.html';})
     // 점형 익히기 선택 시
     const select1 = document.querySelector('.braille-ui-selectbox .select_1');
     select1.addEventListener('click',()=>{location.href = 'braille1.html';})

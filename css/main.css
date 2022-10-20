@@ -4,7 +4,7 @@
     height:100%;
     box-sizing:border-box;
     overflow:hidden;
-    background:url(../images/banner/banner_main.png)no-repeat center / 100% 100%;
+    background:url(../images/banner/banner_main.png)no-repeat center / 101% 100%;
 }
 .main-ui-activity-title {
     position:absolute;

@@ -14,7 +14,288 @@
 <body>
     <div id="root__">
         <div class="common-ui-btnprev flex"><img src="images/btns/btn_prev.png" alt="뒤로가기"></div>
-
+        <div class="setting-ui">
+            <ul class="flex-direction">
+                <li class="btn-cunnect">
+                    <div class="flex">
+                        <div class="flex">
+                            <img src="images/icons/ic_cunnect.png" alt="">
+                            <span>기기 연결하기</span>
+                        </div>
+                        <div class="status flex">
+                            <span class="cunnect__text">연결됨</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="btn-language">
+                    <div class="flex">
+                        <div class="flex">
+                            <img src="images/icons/ic_language.png" alt="">
+                            <span>학습 언어 설정</span>
+                        </div>
+                        <div class="status flex">
+                            <span class="langauge__text">한국어</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="btn-volumn">
+                    <div class="flex">
+                        <div class="flex">
+                            <img src="images/icons/ic_volumn.png" alt="">
+                            <span>음량 조절</span>
+                        </div>
+                        <div class="status flex">
+                            <span class="volumn__text">3</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="btn-voice">
+                    <div class="flex">
+                        <div class="flex">
+                            <img src="images/icons/ic_voice.png" alt="">
+                            <span>AI 음성 변경</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex">
+                        <div class="flex">
+                            <img src="images/icons/ic_learning.png" alt="">
+                            <span>학습진도 확인하기</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="btn-alram">
+                    <div class="flex">
+                        <div class="flex">
+                            <img src="images/icons/ic_alram.png" alt="">
+                            <span>알람 설정</span>
+                        </div>
+                        <div class="status flex">
+                            <span class="alram__text">On</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="btn-appversion">
+                    <div class="flex">
+                        <div class="flex">
+                            <img src="images/icons/ic_app.png" alt="">
+                            <span>앱 버전</span>
+                        </div>
+                        <div class="status flex">
+                            <span>1.0.0</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex">
+                        <div class="flex">
+                            <img src="images/icons/ic_inquiry.png" alt="">
+                            <span>문의하기</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <div class="popup cunnect">
+        <div class="popup__wrap">
+            <img src="images/btns/btn_close2.png" alt="닫기" class="btn-popup-close">
+            <div class="popup__status flex-direction">
+                <img src="images/icons/ic_loading.png" alt="">
+                <span>기기 연결중입니다.</span>
+            </div>
+        </div>
+    </div>
+    <div class="popup cunnectcomplete">
+        <div class="popup__wrap">
+            <img src="images/btns/btn_close2.png" alt="닫기" class="btn-popup-close">
+            <div class="popup__status flex-direction">
+                <img src="images/icons/ic_char_pass.png" alt="" class="completecunnect">
+                <span>기기가 연결되었습니다!</span>
+            </div>
+        </div>
+    </div>
+    <div class="popup language">
+        <div class="popup__wrap">
+            <img src="images/btns/btn_close2.png" alt="닫기" class="btn-popup-close">
+            <div class="popup__status flex-direction">
+                <span>언어 설정</span>
+                <div class="flex language__set">
+                    <div class="flex-direction on">
+                        <div class="country korea"></div>
+                        <span>한국어</span>
+                    </div>
+                    <div class="flex-direction">
+                        <div class="country usa"></div>
+                        <span>영어</span>
+                    </div>
+                    <div class="flex-direction">
+                        <div class="country arab"></div>
+                        <span>아랍어</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup volumn">
+        <div class="popup__wrap">
+            <img src="images/btns/btn_close2.png" alt="닫기" class="btn-popup-close">
+            <div class="popup__status flex-direction">
+                <span>음량 조절</span>
+                <div class="input__volumn flex-direction">
+                    <input type="range" min="1" max="5">
+                    <div class="list flex">
+                        <span class="on">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup voice">
+        <div class="popup__wrap">
+            <img src="images/btns/btn_close2.png" alt="닫기" class="btn-popup-close">
+            <div class="popup__status flex-direction">
+                <span>AI 음성 변경</span>
+                <div class="flex voice__set">
+                    <div class="flex-direction on">
+                        <div class="vocieset man"></div>
+                        <span>남자</span>
+                    </div>
+                    <div class="flex-direction">
+                        <div class="vocieset girl"></div>
+                        <span>여자</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup appversion">
+        <div class="popup__wrap">
+            <img src="images/btns/btn_close2.png" alt="닫기" class="btn-popup-close">
+            <div class="popup__status flex-direction">
+                <span>앱 버전</span>
+                <h2>1.0.0</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        'use strict';
+
+        class InputRange {
+            constructor(input , span , text){
+                this.input = input
+                this.span = span
+                this.text = text
+                this.maxValue = 100 / +this.input.attributes.max.value;
+                this.value = 0
+            }
+
+            animate(){
+                this.value = this.input.value
+
+                this.input.style.background = `
+                    linear-gradient(
+                        to right,
+                        #ffe158 0% ,
+                        #ff9a43 ${(this.maxValue * this.value) - 5}%,
+                        #d8d8d8 ${(this.maxValue * this.value) - 5}%,
+                        #d8d8d8 100%
+                    )
+                `
+
+               this.span.forEach(item =>  {
+                    for(let ls of this.span){
+                        ls.classList.remove('on')
+                    }
+                    this.span[this.value - 1].classList.add('on')
+               })
+
+               this.text.textContent = this.value
+            }
+        }
+
+        let volumnInput = document.querySelector('.input__volumn input')
+        let rangeList = document.querySelectorAll('.list span')
+        let volumnText = document.querySelector('.volumn__text')
+        let inputRange = new InputRange(volumnInput , rangeList , volumnText)
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            inputRange.animate()
+        });
+        volumnInput.addEventListener('input',()=>{
+            inputRange.animate()
+        });
+    </script>
+    <script>
+        'use strict';
+        let language = document.querySelectorAll('.language__set .flex-direction')
+        let langaugeText = document.querySelector('.langauge__text')
+        language.forEach(item => {
+            item.addEventListener('click',(e)=>{
+                    for(let ch of language){
+                    ch.classList.remove('on')
+                }
+                e.currentTarget.classList.add('on')
+                langaugeText.textContent = e.currentTarget.querySelector('span').textContent
+            })
+        })
+    </script>
+    <script>
+        'use strict';
+        let voice = document.querySelectorAll('.voice__set .flex-direction')
+        voice.forEach(item => {
+            item.addEventListener('click',(e)=>{
+                    for(let ch of voice){
+                    ch.classList.remove('on')
+                }
+                e.currentTarget.classList.add('on')
+            })
+        })
+    </script>
+    <script>
+        'use strict';
+        let cunnectText = document.querySelector('.cunnect__text')
+        let alramText = document.querySelector('.alram__text')
+        const btnCunnect = document.querySelector('.btn-cunnect')
+        const btnLanguage = document.querySelector('.btn-language')
+        const btnVolumn = document.querySelector('.btn-volumn')
+        const btnVoice = document.querySelector('.btn-voice')
+        const btnAlram = document.querySelector('.btn-alram') 
+        const btnAppversion = document.querySelector('.btn-appversion')
+
+        const popup = document.querySelectorAll('.popup')
+        const popupCunnect = document.querySelector('.popup.cunnect')
+        const popupLanguage = document.querySelector('.popup.language')
+        const popupVolumn = document.querySelector('.popup.volumn')
+        const popupVoice = document.querySelector('.popup.voice')
+        const popupAppversion = document.querySelector('.popup.appversion')
+        const popupClose = document.querySelectorAll('.btn-popup-close')
+
+
+        btnCunnect.addEventListener('click',()=>{
+            popupCunnect.classList.add('on')
+            // cunnectText.textContent == '연결됨' ?  cunnectText.textContent = '해제됨' : cunnectText.textContent = '연결됨'
+        })
+        btnLanguage.addEventListener('click',()=>{popupLanguage.classList.add('on')})
+        btnVolumn.addEventListener('click',()=>{popupVolumn.classList.add('on')})
+        btnVoice.addEventListener('click',()=>{popupVoice.classList.add('on')})
+        btnAppversion.addEventListener('click',()=>{popupAppversion.classList.add('on')})
+
+        popupClose.forEach((item , i) => {
+            item.addEventListener('click',()=>{
+                popup[i].classList.remove('on')
+            })
+        })
+
+        btnAlram.addEventListener('click',()=>{
+            alramText.textContent == 'On' ? alramText.textContent = 'Off' : alramText.textContent = 'On'
+        })
+    </script>
 </body>
 </html>

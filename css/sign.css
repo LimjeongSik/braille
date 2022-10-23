@@ -1,13 +1,15 @@
 #root__ {
-    position: relative;
-    width:100%;
-    height:100%;
-    box-sizing:border-box;
-    overflow:hidden;
-    background:url(../images/banner/banner_step.png)no-repeat center / 100% 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url(../images/banner/banner_step.png) no-repeat center / 100% 100%;
 }
 .ui-form {
-    max-width:13.9rem;
-    max-height:12.65rem;
-    overflow-y:scroll;
+  max-width: 13.9rem;
+  max-height: 12.65rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+  overflow-y: scroll;
 }

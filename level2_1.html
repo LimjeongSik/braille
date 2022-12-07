@@ -1,44 +1,112 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortuct icon" href="#">
-  <link rel="stylesheet" href="css/slide.min.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/level2_1.css">
-  <title>Braille UP</title>
-</head>
-<body>
-  <div id="root__">
-    <div class="common-ui-btnprev flex"><img src="images/btns/btn_prev.png" alt="뒤로가기"></div>
-    <div class="common-ui-btnsetting flex"><img src="images/btns/btn_setting.png" alt="설정"></div>
-    <span class="help-title">Alaphabet 1</span>
-    <div class="help flex-direction">
-        <div class="flex">
-            <img src="images/icons/ic_flag.png" alt="">
-            <span>올바른 읽기 자세 기르기, 촉지 감각 훈련</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortuct icon" href="#" />
+        <link rel="stylesheet" href="css/slide.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/level2_1.css" />
+        <title>Braille UP</title>
+    </head>
+    <body>
+        <div id="root__">
+            <div class="common-ui-btnprev flex">
+                <img src="images/btns/btn_prev.png" alt="뒤로가기" />
+            </div>
+            <div class="common-ui-btnsetting flex">
+                <img src="images/btns/btn_setting.png" alt="설정" />
+            </div>
+            <span class="help-title">Alaphabet 1</span>
+            <div class="helpWrap">
+                <div class="swiper helpswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="help flex-direction">
+                                <div class="flex">
+                                    <img
+                                        src="images/icons/ic_flag.png"
+                                        alt=""
+                                    />
+                                    <span
+                                        >올바른 읽기 자세 기르기, 촉지 감각
+                                        훈련</span
+                                    >
+                                </div>
+                                <div class="help__">
+                                    <img
+                                        src="images/level/help_braille_2.png"
+                                        alt=""
+                                    />
+                                    <span>a</span>
+                                </div>
+                                <span>
+                                    점자를 읽기 위한 가장 기초적인 단계로
+                                    <span>촉지감각을 활성화</span> 시키는
+                                    활동입니다.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="help flex-direction">
+                                <div class="flex">
+                                    <img
+                                        src="images/icons/ic_flag.png"
+                                        alt=""
+                                    />
+                                    <span
+                                        >올바른 읽기 자세 기르기, 촉지 감각
+                                        훈련</span
+                                    >
+                                </div>
+                                <div class="help__">
+                                    <img
+                                        src="images/level/help_braille_2.png"
+                                        alt=""
+                                    />
+                                    <span>a</span>
+                                </div>
+                                <span>
+                                    점자를 읽기 위한 가장 기초적인 단계로
+                                    <span>촉지감각을 활성화</span> 시키는
+                                    활동입니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="ic">
+                <div class="t-box">
+                    <span>
+                        알파벳을<br />
+                        배워볼까요?
+                    </span>
+                </div>
+                <img src="images/icons/ic_char_2.png" alt="" />
+            </div>
         </div>
-        <div class="help__">
-            <img src="images/level/help_braille_2.png" alt="">
-            <span>a</span>
+        <div class="starting__popup">
+            <div class="start">
+                <img src="images/btns/btn_starting.png" alt="시작하기" />
+            </div>
         </div>
-        <span>
-            점자를 읽기 위한 가장 기초적인 단계로 <span>촉지감각을 활성화</span> 시키는 활동입니다.        </span>
-    </div>
-    <div class="ic">
-        <div class="t-box">
-            <span>
-                알파벳을<br>
-                배워볼까요?
-            </span>
-        </div>
-        <img src="images/icons/ic_char_2.png" alt="">
-    </div>
-  </div>
-  
-  <script src="js/common.js"></script>
-</body>
+        <script src="js/jquery.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/common.js"></script>
+        <script>
+            var swiper = new Swiper(".helpswiper", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </body>
 </html>

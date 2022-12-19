@@ -1,0 +1,98 @@
+#root__ {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../images/banner/banner_learning.png) no-repeat center /
+        cover;
+}
+.chr {
+    position: absolute;
+    left: 10px;
+    bottom: 17px;
+    width: 100%;
+    max-width: 4.3rem;
+    height: auto;
+    z-index: 500;
+}
+.learning__wrap {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 85%;
+    padding: 2.75rem 1.1rem 0;
+    box-sizing: border-box;
+    background: #82c18a;
+    border-radius: 0.7rem 0.7rem 0 0;
+}
+.learning {
+    max-height: 13.5rem;
+    box-sizing: border-box;
+    overflow: auto;
+    padding-bottom: 1rem;
+    padding: 0 1rem;
+}
+.learning::-webkit-scrollbar {
+    width: 12px;
+}
+.learning::-webkit-scrollbar-thumb {
+    height: 70%;
+    background-color: #5a422e;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+.learning__title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    border: 3px solid #82c18a;
+    background-color: #ffdd41;
+    border-radius: 1.15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 7.8rem;
+    height: 2.15rem;
+}
+.learning__title h2 {
+    font-size: 1rem;
+    letter-spacing: -0.53px;
+    color: #5a422e;
+    font-family: "Infinity-B";
+}
+.learning__list li {
+    position: relative;
+    width: 100%;
+    padding: 1.55rem 1rem 1.25rem;
+    box-sizing: border-box;
+    border-radius: 0.7rem;
+    background: #c0e0c4;
+}
+.learning__list li .learning__date {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0.75rem 0.85rem;
+    font-size: 1rem;
+    letter-spacing: -0.53px;
+    color: #5a422e;
+    font-family: "Infinity-B";
+}
+.learning__list li h6 {
+    font-size: 1.15rem;
+    letter-spacing: -0.61px;
+    color: #5a422e;
+    font-family: "Infinity-B";
+    margin-bottom: 0.3rem;
+}
+.learning__list li p {
+    font-size: 1rem;
+    letter-spacing: -0.53px;
+    color: #5a422e;
+    font-family: "Infinity-R";
+}
+.learning__list li:not(:first-child) {
+    margin-top: 0.4rem;
+}
